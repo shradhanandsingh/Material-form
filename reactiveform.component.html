@@ -1,0 +1,32 @@
+
+<div class="reactiveform">
+  <div class="container">
+    <div class="row">
+   <div class="col-md-3"></div>
+   <div class="col-md-6">
+      <div>
+        <h3>Simple Reactive Form</h3>
+
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)" class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="First Name" formControlName="fname">
+          </mat-form-field>
+          <mat-form-field>
+              <input matInput placeholder="Last Name" formControlName="lname">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Your email" formControlName="email">
+              </mat-form-field>
+            <mat-form-field>
+                <textarea matInput placeholder="Your message" formControlName="message"></textarea>
+              </mat-form-field>
+              <button mat-button type="submit">Click me!</button>
+        </form>
+    
+      </div>
+    </div>
+     
+    </div>
+
+  </div>
+</div>
